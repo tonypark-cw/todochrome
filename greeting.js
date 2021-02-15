@@ -5,10 +5,15 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
 
+function saveName(text){
+    localStorage.setItem(USER_LS,text);
+}
+
 function handleSubmit(event){
     event.preventDefault();
-    localStorage.setItem(USER_LS,input.value);
-    form.classList.remove(SHOWING_CN);
+    const NAME = input.value;
+    paintGreeting(NAME);
+    saveName(NAME);
 }
 
 function askForName(){
