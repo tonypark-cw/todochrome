@@ -17,18 +17,25 @@ body{
 .greetings{
     display: none;
     font-size: 3em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 .content{
     position:relative;
-    top:400px;
+    opacity: 0.2;
+    top:300px;
 }
 
 .js-title{
-    font-size: 4em;
+    font-size: 6em;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
 }
 
+.content:hover{
+    opacity: 1;
+}
 
 .showing{
     display: block;
