@@ -1,6 +1,8 @@
 const clockContainer = document.querySelector(".js-clock"),
     clockTitle = clockContainer.querySelector(".js-title");
 
+init();
+
 function getTime(){
     const date = new Date();
     const hours = date.getHours();
@@ -14,4 +16,8 @@ function init(){
     setInterval(getTime, 1000);
 }
 
-init();
+function blur(){
+    
+}
+
+
